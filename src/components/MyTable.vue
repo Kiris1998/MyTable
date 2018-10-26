@@ -53,8 +53,8 @@ export default {
       axios.post('http://localhost:8080/api/deleteInfo',{
         _id: info._id
       }).then(() => {
-        this.form.username = null
-        this.form.age = null
+        // this.form.username = null
+        // this.form.age = null
         axios.get('http://localhost:8080/api/userInfo')
         .then((res) => {
           bus.$emit('changeTable',res.data.res)

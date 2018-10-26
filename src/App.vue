@@ -9,6 +9,7 @@
     <add-dialog :isVisiable = "formVisiable" @closeWindow = "closeDialog"></add-dialog>
     <search-dialog :isVisiable = "formVisiableS" @closeWindowS = "closeDialogS"></search-dialog>
     <edit-dialog :isVisiable = "formVisiableE" @closeWindowE = "closeDialogE"></edit-dialog>
+    <photo></photo>
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import AddDialog from './components/AddDialog'
 import SearchDialog from './components/SearchDialog'
 import EditDialog from './components/EditDialog'
 import MyTable from './components/MyTable'
+import Photo from './components/Photo'
 export default {
   name: 'app',
   data() {
@@ -30,7 +32,8 @@ export default {
     AddDialog,
     MyTable,
     SearchDialog,
-    EditDialog
+    EditDialog,
+    Photo
   },
   methods: {
     closeDialog: function () {
